@@ -8,12 +8,22 @@
 Your browser does not support the HTML5 canvas tag.</canvas>
 
 <script>
-
+  function circle(x, y, r, circstart, circaround){
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(x, y, r, circstart * 2 * Math.PI, circaround * 2 * Math.PI);
+    ctx.fill();
+  }
+  circle(100, 75, 50, 0, 1)
+  circle(200, 75, 50, 0, 1)
+/*
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 ctx.beginPath();
 ctx.arc(100, 75, 50, 0, 2 * Math.PI);
 ctx.fill();
+*/
 
 </script> 
   </body>
