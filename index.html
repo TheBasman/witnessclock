@@ -8,6 +8,9 @@
 Your browser does not support the HTML5 canvas tag.</canvas>
 
 <script>
+  //r = radius
+  //circstart = part of circle you skip (0-1)
+  //circaround = part of circle you draw from the begin (0-1)
   function circle(x, y, r, circstart, circaround){
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
@@ -15,15 +18,9 @@ Your browser does not support the HTML5 canvas tag.</canvas>
     ctx.arc(x, y, r, circstart * 2 * Math.PI, circaround * 2 * Math.PI);
     ctx.fill();
   }
-  circle(100, 75, 50, 0, 1)
-  circle(200, 75, 50, 0, 1)
-/*
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-ctx.beginPath();
-ctx.arc(100, 75, 50, 0, 2 * Math.PI);
-ctx.fill();
-*/
+  circle(100, 75, 25, 0, 1)
+  circle(200, 75, 25, 0, 1)
+
 
 </script> 
   </body>
