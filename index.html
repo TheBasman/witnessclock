@@ -16,7 +16,7 @@ Your browser does not support the HTML5 canvas tag.</canvas>
     var ctx = c.getContext("2d");
     ctx.beginPath();
     ctx.fillStyle = color;
-    ctx.arc(2*x/3, 2*y/3, 2*r/3, circstart * 2 * Math.PI, circaround * 2 * Math.PI);
+    ctx.arc(4*x/5, 4*y/5, 4*r/5, circstart * 2 * Math.PI, circaround * 2 * Math.PI);
     ctx.fill();
   }
   //either length or hight will always be 20
@@ -24,7 +24,7 @@ Your browser does not support the HTML5 canvas tag.</canvas>
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
     ctx.fillStyle = color;
-    ctx.fillRect(2*x/3, 2*y/3-(hight/3), 2*length/3, 2*hight/3); 
+    ctx.fillRect(4*x/5, 4*y/5-(2*hight/5), 4*length/5, 4*hight/5); 
   }
   //Panel 1
     //big circle
