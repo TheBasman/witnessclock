@@ -18,7 +18,7 @@ Your browser does not support the HTML5 canvas tag.</canvas>
     ctx.arc(x, y, r, circstart * 2 * Math.PI, circaround * 2 * Math.PI);
     ctx.fill();
   }
-  
+  //either length or hight will always be 20
   function line(x, y, length, hight, color){
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
@@ -26,7 +26,7 @@ Your browser does not support the HTML5 canvas tag.</canvas>
     ctx.fillRect(x, y-(hight/2), length, hight); 
   }
   circle(100, 75, 25, 0, 1)
-  circle(300, 75, 25, 0, 1)
+  circle(295, 75, 20, 0.25, 1.25)
   line(100, 75, 200, 20, '#000000')
 
 
