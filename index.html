@@ -68,25 +68,25 @@ Your browser does not support the HTML5 canvas tag.</canvas>
     ctx.beginPath();
     ctx.moveTo(x, y);
     ctx.lineTo(x+10*scale, y);
-    ctx.lineTo(x, y+20*scale);
+    ctx.lineTo(x, y+25*scale);
     ctx.fill();
     ctx.moveTo(x+10*scale, y+25*scale);
     ctx.lineTo(x+10*scale, y);
     ctx.lineTo(x, y+25*scale);
     ctx.fill();
-    //left under
-    ctx.moveTo(x+10*scale, y+25*scale);
-    ctx.lineTo(x+10*scale, y);
+    //right under
+    ctx.moveTo(x+25*scale, y+35*scale);
+    ctx.lineTo(x+5*scale, y+25*scale);
     ctx.lineTo(x, y+25*scale);
     ctx.fill();
     ctx.moveTo(x+10*scale, y+25*scale);
     ctx.lineTo(x+10*scale, y);
     ctx.lineTo(x, y+25*scale);
     ctx.fill(); 
-    //right under
-    ctx.moveTo(x+10*scale, y+25*scale);
-    ctx.lineTo(x+10*scale, y);
-    ctx.lineTo(x, y+25*scale);
+    //left under
+    ctx.moveTo(x-15*scale, y+35*scale);
+    ctx.lineTo(x+5*scale, y+25*scale);
+    ctx.lineTo(x, y+15*scale);
     ctx.fill();
     ctx.moveTo(x+10*scale, y+25*scale);
     ctx.lineTo(x+10*scale, y);
