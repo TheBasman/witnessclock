@@ -38,13 +38,13 @@ Your browser does not support the HTML5 canvas tag.</canvas>
     ctx.fillStyle = color;
     ctx.fillRect(x, y, 50*scale, 50*scale);
     ctx.beginPath();
-    ctx.moveTo(x+25*scale, y-(50/3)*scale);
-    ctx.lineTo(x-(50/3)*scale, y+25*scale);
-    ctx.lineTo(x+50*scale+(50/3)*scale, y+25*scale);
+    ctx.moveTo(x+25*scale, y-(50/4)*scale);
+    ctx.lineTo(x-(50/4)*scale, y+25*scale);
+    ctx.lineTo(x+50*scale+(50/4)*scale, y+25*scale);
     ctx.fill();
-    ctx.moveTo(x+25*scale, y+50*scale+(50/3)*scale);
-    ctx.lineTo(x-(50/3)*scale, y+25*scale);
-    ctx.lineTo(x+50*scale+(50/3)*scale, y+25*scale);
+    ctx.moveTo(x+25*scale, y+50*scale+(50/4)*scale);
+    ctx.lineTo(x-(50/4)*scale, y+25*scale);
+    ctx.lineTo(x+50*scale+(50/4)*scale, y+25*scale);
     ctx.fill();
   }
   function eliminate(x, y, scale, color){
