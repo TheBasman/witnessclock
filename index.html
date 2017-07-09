@@ -61,8 +61,19 @@ Your browser does not support the HTML5 canvas tag.</canvas>
     ctx.lineTo(x+50*scale+(50/4)*scale, y+25*scale);
     ctx.fill();
   }
-  function eliminate(x, y, scale, color){
-  
+  function eliminate(x, y, scale){
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.fillStyle = #000000;
+    ctx.beginPath();
+    ctx.moveTo(x, y);
+    ctx.lineTo(x+10*scale, y);
+    ctx.lineTo(x, y+20*scale);
+    ctx.fill();
+    ctx.moveTo(x+10*scale, y+20*scale);
+    ctx.lineTo(x+10*scale, y);
+    ctx.lineTo(x, y+20*scale);
+    ctx.fill();
   }
   function triangles(x, y, scale, color, count){
   
@@ -130,6 +141,7 @@ Your browser does not support the HTML5 canvas tag.</canvas>
   star(125,95,4/5,'#000000')
   scuare(231,89,1,'#000000')
   scuare(231,197,1,'#000000')
+  eliminate(125,197,1)
 </script> 
   </body>
 
