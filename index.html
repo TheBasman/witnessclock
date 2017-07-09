@@ -83,18 +83,21 @@ Your browser does not support the HTML5 canvas tag.</canvas>
     ctx.lineTo(x+5*scale, y+25*scale);
     ctx.lineTo(x+10*scale, y+15*scale);
     ctx.fill();
-    ctx.moveTo(x+10*scale, y+25*scale);
-    ctx.lineTo(x+10*scale, y);
-    ctx.lineTo(x, y+25*scale);
+      //high triangle
+    ctx.moveTo(x+25*scale, y+25*scale);
+    ctx.lineTo(x+5*scale, y+25*scale);
+    ctx.lineTo(x+10*scale, y+15*scale);
     ctx.fill(); 
     //left under
+      //low triangle
     ctx.moveTo(x-10*scale, y+32.5*scale);
     ctx.lineTo(x+5*scale, y+25*scale);
     ctx.lineTo(x, y+15*scale);
     ctx.fill();
-    ctx.moveTo(x+10*scale, y+25*scale);
-    ctx.lineTo(x+10*scale, y);
-    ctx.lineTo(x, y+25*scale);
+      //high triangle
+    ctx.moveTo(x+15*scale, y+25*scale);
+    ctx.lineTo(x+5*scale, y+25*scale);
+    ctx.lineTo(x, y+15*scale);
     ctx.fill();    
   }
   function triangles(x, y, scale, color, count){
