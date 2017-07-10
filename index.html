@@ -30,8 +30,8 @@ Your browser does not support the HTML5 canvas tag.</canvas>
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
     ctx.fillStyle = color;
-    ctx.fillRect(x+(50/3)*scale, y, (50/3)*scale, 50*scale);
-    ctx.fillRect(x, y+(50/3)*scale, 50*scale, (50/3)*scale);
+    ctx.fillRect(x+(50/3)*scale, y, (50/3)*scale+2, 50*scale);
+    ctx.fillRect(x, y+(50/3)*scale, 50*scale+2, (50/3)*scale);
     ctx.beginPath();
     ctx.arc(x+(50/3)*scale, y+(50/3)*scale, (50/3)*scale, 0.5 * 2 * Math.PI, 1 * 2 * Math.PI);
     ctx.fill();
