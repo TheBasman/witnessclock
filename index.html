@@ -103,8 +103,17 @@ Your browser does not support the HTML5 canvas tag.</canvas>
   function triangles(x, y, scale, color, count){
   
   }
+  function skuare(x, y, scale, color){
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.fillStyle = color;
+    ctx.fillRect(x, y, scale, scale); 
+  }
+  //Backdrops
+  skuare(115, 80, 215,'FF8000')
   
- 
+  
+  
   //Panel 1
     //big circle
   circle(110, 345, 25, 0, 1, '#000000')
@@ -163,9 +172,9 @@ Your browser does not support the HTML5 canvas tag.</canvas>
   line(380+1200, 205, 20, 260, '#000000')
   
   //Puzzle 1
-  star(125,95,4/5,'#000000')
-  scuare(231,89,1,'#000000')
-  scuare(231,197,1,'#000000')
+  star(125,95,4/5,'#00FFFF')
+  scuare(231,89,1,'#00FFFF')
+  scuare(231,197,1,'#00FFFF')  
   eliminate(140,205,1)
   eliminate(140+750,95,1)
 </script> 
